@@ -1,0 +1,18 @@
+<table class="table">
+	<tr>
+		<th>Datum</th>
+		<th>Tijd</th>
+		<th>Thuis</th>
+		<th>Uit</th>
+		<th>Resultaat</th>
+		<th>Accomodatie</th>
+	</tr>
+	<tr ng-repeat="match in matches | orderBy:'date'">
+		<td>{{match.datumString}}</td>
+		<td>{{match.beginTijd}}</td>
+		<td>{{match.tTNaam}}</td>
+		<td>{{match.tUNaam}}</td>
+		<td>{{match.uitslag}}</td>
+		<td>{{match.accNaam}}</td>
+	</tr>
+</table>
