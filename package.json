@@ -35,6 +35,9 @@
   },
   "scripts": {
     "test": "karma start test\\karma.conf.js",
-	"start": "grunt serve"
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }
