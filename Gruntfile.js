@@ -1,4 +1,4 @@
-// Generated on 2016-08-04 using generator-angular 0.15.1
+// Generated on 2016-06-22 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -371,7 +371,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'rapidApp',
+          module: 'myStudyPlannerFrontApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
@@ -451,12 +451,12 @@ module.exports = function (grunt) {
     },
 
     // Test settings
-    /*karma: {
+    karma: {
       unit: {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    }*/
+    }
   });
 
 
