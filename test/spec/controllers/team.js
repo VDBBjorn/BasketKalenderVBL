@@ -16,8 +16,4 @@ describe('Controller: TeamCtrl', function () {
       // place here mocked dependencies
     });
   }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(TeamCtrl.awesomeThings.length).toBe(3);
-  });
 });

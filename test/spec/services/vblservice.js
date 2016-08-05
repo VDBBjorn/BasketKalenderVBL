@@ -11,8 +11,4 @@ describe('Service: vblService', function () {
     vblService = _vblService_;
   }));
 
-  it('should do something', function () {
-    expect(!!vblService).toBe(true);
-  });
-
 });
