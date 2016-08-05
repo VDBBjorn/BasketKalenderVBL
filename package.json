@@ -44,7 +44,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "./node_modules/grunt-cli/bin/grunt serve --force",
+    "start": "node server.js",
     "postinstall": "bash ./post_install.sh"
   }
 }
