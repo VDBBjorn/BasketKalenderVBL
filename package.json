@@ -44,7 +44,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "bash ./post_install.sh"
+    "start": "node server.js"
   }
 }
