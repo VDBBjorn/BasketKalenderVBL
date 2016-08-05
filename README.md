@@ -1,2 +1,12 @@
-# BasketKalenderVBL
-Usage example in angularJS for the AP calls to Vlaamse Basketbal Liga (VBL)
+# rapid
+
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.15.1.
+
+## Build & development
+
+Run `grunt` for building and `grunt serve` for preview.
+
+## Testing
+
+Running `grunt test` will run the unit tests with karma.
