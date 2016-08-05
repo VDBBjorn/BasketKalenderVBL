@@ -480,14 +480,14 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
-  grunt.registerTask('test', [
+/*  grunt.registerTask('test', [
     'clean:server',
     'wiredep',
     'concurrent:test',
     'postcss',
     'connect:test',
     'karma'
-  ]);
+  ]);*/
 
   grunt.registerTask('build', [
     'clean:dist',
