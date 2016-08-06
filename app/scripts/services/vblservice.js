@@ -8,7 +8,7 @@
  * Service in the rapidApp.
  */
 angular.module('rapidApp')
-    .constant('API', 'https://vblcb.wisseq.eu/VBLCB_WebService/data/')
+    .constant('API', 'http://vblcb.wisseq.eu/VBLCB_WebService/data/')
     .constant('TEAM', 'BVBL1074')
     .service('vblService', function($http, $q, API, TEAM) {
 
