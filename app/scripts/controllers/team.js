@@ -10,6 +10,7 @@
 angular.module('rapidApp')
     .controller('TeamCtrl', function($routeParams, $scope, vblService) {
         $scope.matches = {};
+        $scope.months = ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'];
         var guid = $routeParams.guid;
         vblService.getMatches(guid).then(function(result) {
             console.log(result);

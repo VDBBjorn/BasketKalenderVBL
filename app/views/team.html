@@ -1,4 +1,4 @@
-<table class="table">
+<!-- <table class="table">
 	<tr>
 		<th>Datum</th>
 		<th>Tijd</th>
@@ -15,4 +15,22 @@
 		<td>{{match.uitslag}}</td>
 		<td>{{match.accNaam}}</td>
 	</tr>
-</table>
+</table> -->
+<div class="upcoming_events">
+	<ul>
+		<li ng-repeat="match in matches | orderBy:'date'">
+			<div class="event_date">
+				<div class="date">
+					{{match.date.getDate()}}
+					<span>{{months[match.date.getMonth()]}}</span>
+					<span>{{match.date.getFullYear()}}</span>
+				</div>
+			</div>
+			<div class="commands">
+				<div class="col-md-12 text-bold"><b>{{match.tTNaam}} <span>-  </span> {{match.tUNaam}}</b></div>
+				<div class="col-md-3 time"><i class="fa fa-clock-o"></i>{{match.beginTijd}}</div>
+				<div class="col-md-9 stadium"><i class="fa fa-map-marker"></i>{{match.accNaam}}</div>
+			</div>
+		</li>
+	</ul>
+</div>

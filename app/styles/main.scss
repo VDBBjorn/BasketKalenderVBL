@@ -87,3 +87,175 @@ body {
     border-bottom: 0;
   }
 }
+
+.upcoming_events{
+    position: relative;
+    margin: 0 0 40px;
+}
+
+.upcoming_events ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.upcoming_events ul li{
+    position: relative;
+    background: #efefef;
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 0 20px;
+}
+
+.upcoming_events ul li:hover{
+    background: #efefef;
+}
+
+.upcoming_events ul li:hover .event_date{
+    background: #efefef;
+}
+
+.upcoming_events ul li:hover .event_date .date{
+    border-color:#000;
+}
+
+.upcoming_events .event_date{
+    display: table-cell;
+    background: #efefef;
+    text-align: center;
+    vertical-align: middle;
+    width: 95px;
+    box-sizing: border-box;
+}
+
+.upcoming_events .event_date .date{
+    display: inline-block;
+    font-size: 30px;
+    color:#000;
+    padding: 0 0 7px;
+    border-bottom: 3px solid #000;
+}
+
+.upcoming_events .event_date .date span{
+    display: block;
+    font-size: 13px;
+}
+
+.upcoming_events .commands{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 30px 40px 20px;
+}
+
+.upcoming_events .commands h3{
+    text-transform: uppercase;
+    color:#000;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+.upcoming_events .commands h3 span{
+    color:#000;
+    margin: 0 10px;
+}
+
+.upcoming_events .read_more{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 32px;
+}
+
+.upcoming_events .commands .time{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    color:#000;
+    font-size: 13px;
+}
+
+.upcoming_events .commands .time .fa{
+    font-size: 15px;
+}
+
+.upcoming_events .commands .stadium .fa{
+    font-size: 18px;
+}
+
+.upcoming_events .commands .time .fa, .upcoming_events .commands .stadium .fa{
+    color:#b2b2b2;
+    margin: 0 7px 0 0;
+}
+
+.upcoming_events .commands .stadium{
+    display: inline-block;
+    vertical-align: top;
+    color:#000;
+    font-size: 13px;
+}
+
+.upcoming_events ul li:hover .btn{
+    background: #e01a1a;
+    border-color:#e01a1a;
+}
+
+.upcoming_events ul li .btn:hover{
+    background: #c60000;
+    border-color:#c60000;
+}
+
+.fixture_detail.future h3{
+    color:#000;
+}
+
+.fixture_detail.future .goals h2{
+    color:#000;
+}
+
+.fixture_detail.future .command_info .score{
+    background: none !important;
+}
+
+.fixture_detail.future .command_info .score:after{
+    display: none !important;
+}
+
+.fixture_detail.future .command_left .command_info .score:before{
+    content: 'VS';
+    position: absolute;
+    right: -52px;
+    top: 0;
+    color:#e21919;
+    font-size: 60px;
+}
+
+.fixture_detail.future .fixture_info{
+    padding: 40px 0 0;
+    color:#000;
+    text-align: center;
+}
+
+.fixture_detail.future .fixture_info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.fixture_detail.future .fixture_info li{
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    margin: 0 10px;
+}
+
+.fixture_detail.future .fixture_info .fa{
+    color:#b2b2b2;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.fixture_detail.future .fixture_info .fa.fa-map-marker{
+    font-size: 18px;
+}
