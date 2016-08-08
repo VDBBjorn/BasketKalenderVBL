@@ -4,12 +4,10 @@ var app = express();
 app.use(express.static(__dirname + '/dist'));
 /*app.listen(port);*/
 
-function requireHttp(req, res, next) {
-	if(req.secure) {
-		return res.redirect('http://' + req.get('host') + req.url);
-	}
-	next();
-}
-
-app.use(requireHttp);
+app.use(function(req, res, next) {
+    if(req.protocol !== 'https') {
+        return res.status(403).send({message: 'SSL required'});
+    }
+    next();
+});
 app.listen(port);
