@@ -12,4 +12,4 @@ app.get('*',function(req,res,next){
 })
 
 var port = process.env.PORT ||3000;
-app.listen(80);
+app.listen(port);
