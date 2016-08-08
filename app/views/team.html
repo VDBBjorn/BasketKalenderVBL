@@ -27,9 +27,10 @@
 				</div>
 			</div>
 			<div class="commands">
-				<div class="col-md-12 text-bold"><b>{{match.tTNaam}} <span>-  </span> {{match.tUNaam}}</b></div>
-				<div class="col-md-3 time"><i class="fa fa-clock-o"></i>{{match.beginTijd}}</div>
-				<div class="col-md-9 stadium"><i class="fa fa-map-marker"></i>{{match.accNaam}}</div>
+				<div class="col-xs-12 text-bold"><b>{{match.tTNaam}} <span>-  </span> {{match.tUNaam}}</b></div>
+				<div class="col-xs-12 time"><i class="fa fa-clock-o" style="width:20px;"></i>{{match.beginTijd}}</div>
+				<div class="col-xs-12 stadium"><i class="fa fa-map-marker" style="width:20px;"></i>{{match.accNaam}}</div>
+				<div ng-if="match.uitslag != ''" class="col-md-12 stadium"><i class="fa fa-toggle-right" style="width:20px;"></i>{{match.uitslag}}</div>
 			</div>
 		</li>
 	</ul>
