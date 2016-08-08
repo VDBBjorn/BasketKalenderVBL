@@ -1,5 +1,7 @@
 var express = require('express');
-var port = 80;
+var http = require('http');
+var port = process.env.PORT || 3000;
 var app = express();
 app.use(express.static(__dirname + '/dist'));
-app.listen(port);
+/*app.listen(port);*/
+http.createServer(app).listen(port);
