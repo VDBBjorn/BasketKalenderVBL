@@ -2,14 +2,15 @@ var express = require('express');
 var http = require('http');
 var app = express();
 app.use(express.static(__dirname + '/dist'));
-var server = http.createServer(app);
 
-app.get('*',function(req,res,next){
+app.use(function(req,res,next){
   if(req.headers['x-forwarded-proto']=='https')
-    res.redirect('http://rapidmatches.herokuapp.com'+req.url)
+    return res.redirect(['http://', req.get('Host'), req.url].join(''));
   else
-    next() /* Continue to other routes if we're not redirecting */
+    return next();
 })
 
-var port = process.env.PORT ||3000;
-app.listen(port);
+var server = http.createServer(app);
+
+var port = process.env.PORT || 3000;
+server.listen(port);
