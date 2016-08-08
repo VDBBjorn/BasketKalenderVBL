@@ -1,5 +1,5 @@
 var express = require('express');
-var port = process.env.PORT;
+var port = 80;
 var app = express();
 app.use(express.static(__dirname + '/dist'));
 app.listen(port);
