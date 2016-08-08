@@ -429,8 +429,8 @@ module.exports = function (grunt) {
         }, {
         	expand: true,
         	dot: true,
-        	cwd: 'bower_components/font-awesome/dist',
-        	src: ['fonts/*.*'],
+        	cwd: './bower_components/font-awesome/',
+        	src: 'fonts/*',
         	dest: '<%= yeoman.dist %>'
         }]
       },
@@ -517,7 +517,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'newer:jscs',
-    'test',
+    //'test',
     'build'
   ]);
 };
