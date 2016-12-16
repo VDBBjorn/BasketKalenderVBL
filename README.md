@@ -10,3 +10,7 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+## Demo
+
+Demo is running at http://rapidmatches.herokuapp.com (https will not work for this demo)
